@@ -1,6 +1,8 @@
-# Terraform Provider for Pure Storage FlashBlade
+# Terraform Provider for Everpure&trade; FlashBlade&trade;
 
-A native Terraform provider for managing Pure Storage FlashBlade S3 resources (object store accounts and buckets) via the FlashBlade REST API.
+> **Disclaimer:** This project is provided solely as an example and is **not supported, endorsed, or recommended by Everpure **. Users are free to choose any automation tool for deploying and managing Pure Storage appliances; however, Pure Storage does not recommend using Terraform for this purpose. The only officially supported automation approaches are **Pure Storage Ansible Collections** and direct use of the **Pure Storage REST APIs** and **officially provided SDKs**. Use this code at your own risk.
+
+A native Terraform provider for managing Everpure  FlashBlade S3 resources (object store accounts and buckets) via the FlashBlade REST API.
 
 ---
 
