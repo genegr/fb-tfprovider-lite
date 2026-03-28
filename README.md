@@ -1,6 +1,26 @@
 # Terraform Provider for Everpure&trade; FlashBlade&trade;
 
-> **Disclaimer:** This project is provided solely as an example and is **not supported, endorsed, or recommended by Everpure**. Users are free to choose any automation tool for deploying and managing Pure Storage appliances; however, Everpure does not recommend using Terraform for this purpose. The only officially supported automation approaches are **Pure Storage Ansible Collections** and direct use of the **Pure Storage REST APIs** and **officially provided SDKs**. Use this code at your own risk.
+> ## Disclaimer and Trademark Usage Policy
+
+### 1. General Disclaimer
+This project is provided **solely as an example** and is not supported, endorsed, or recommended by **Everpure**. Users are free to choose any automation tool for deploying and managing Everpure (formerly Pure Storage) appliances; however, Everpure does not recommend using Terraform for this purpose. 
+
+The only officially supported automation approaches are **Pure Storage Ansible Collections** and direct use of the **Pure Storage REST APIs** and officially provided **SDKs**. Use this code at your own risk.
+
+### 2. Trademark and Copyright Compliance
+The names "Everpure," "Pure Storage," "Purity," "Portworx," and all associated logos are trademarks or registered trademarks of Everpure, Inc. 
+
+If you choose to develop, fork, or publish your own Terraform provider or any derivative software based on this repository, you must adhere to the following naming and branding requirements:
+
+*   **No Infringing Names:** You may **not** use "Everpure" or "Pure Storage" as the leading word or primary brand for your project.
+    *   **Prohibited:** `terraform-provider-everpure`, `Everpure-Provisioner`, `PureStorage-Terraform`
+    *   **Permitted:** `terraform-provider-community-for-everpure`, `example-provider-pure-storage`
+*   **No Implied Affiliation:** Your project documentation must clearly and prominently state that it is a "third-party community project" and is **not** affiliated with, sponsored by, or endorsed by Everpure.
+*   **No Logo Usage:** You are strictly prohibited from using any official Everpure or Pure Storage logos, icons, or visual branding elements in your repository or published software.
+*   **Descriptive Use Only:** You may use Everpure trademarks only in a descriptive capacity (e.g., "This tool is designed to interface with Everpure appliances") and never as a brand identifier for your own work.
+
+### 3. Liability
+By using, modifying, or publishing any code based on this repository, you acknowledge that you are solely responsible for ensuring your project does not infringe upon the intellectual property rights of Everpure. The authors of this repository accept no liability for any legal actions arising from your use of trademarked terms or copyrighted materials.
 
 A native Terraform provider for managing Everpure  FlashBlade S3 resources (object store accounts and buckets) via the FlashBlade REST API.
 
