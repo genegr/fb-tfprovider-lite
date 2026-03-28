@@ -6,7 +6,7 @@ PLUGIN_DIR=~/.terraform.d/plugins/registry.terraform.io/purestorage/purefb/$(VER
 .PHONY: build install test testacc clean fmt
 
 build:
-	go build -o $(BINARY)
+	CGO_ENABLED=0 go build -o $(BINARY)
 
 install: build
 	mkdir -p $(PLUGIN_DIR)
