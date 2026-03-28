@@ -28,7 +28,7 @@ type BucketAccount struct {
 // BucketCreateBody is the request body for creating a bucket.
 type BucketCreateBody struct {
 	Account          *BucketAccount `json:"account,omitempty"`
-	QuotaLimit       *int64         `json:"quota_limit,omitempty"`
+	QuotaLimit       *string        `json:"quota_limit,omitempty"`
 	HardLimitEnabled *bool          `json:"hard_limit_enabled,omitempty"`
 }
 

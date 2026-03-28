@@ -148,7 +148,8 @@ func (r *bucketResource) Create(ctx context.Context, req resource.CreateRequest,
 			resp.Diagnostics.AddError("Invalid quota", err.Error())
 			return
 		}
-		createBody.QuotaLimit = &quotaBytes
+		quotaStr := fmt.Sprintf("%d", quotaBytes)
+		createBody.QuotaLimit = &quotaStr
 		hardLimit := plan.HardLimitEnabled.ValueBool()
 		createBody.HardLimitEnabled = &hardLimit
 	}

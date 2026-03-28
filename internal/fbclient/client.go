@@ -45,7 +45,7 @@ func NewClient(fbURL, apiToken string, verifySSL bool) (*Client, error) {
 }
 
 func (c *Client) login(apiToken string) error {
-	url := fmt.Sprintf("%s/api/%s/login", c.BaseURL, apiVersion)
+	url := fmt.Sprintf("%s/api/login", c.BaseURL)
 	req, err := http.NewRequest("POST", url, nil)
 	if err != nil {
 		return err
@@ -76,7 +76,7 @@ func (c *Client) Close() {
 	if c.SessionToken == "" {
 		return
 	}
-	url := fmt.Sprintf("%s/api/%s/logout", c.BaseURL, apiVersion)
+	url := fmt.Sprintf("%s/api/logout", c.BaseURL)
 	req, _ := http.NewRequest("POST", url, nil)
 	req.Header.Set("x-auth-token", c.SessionToken)
 	resp, err := c.HTTPClient.Do(req)
