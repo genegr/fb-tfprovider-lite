@@ -1,4 +1,7 @@
+CLAUDE.md
 terraform-provider-purefb
 *.tfvars
 .terraform/
 *.tfstate*
+go.mod
+go.sum
